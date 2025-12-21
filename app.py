@@ -14,7 +14,12 @@ app.config.from_object("config.Config")
 # CORS
 CORS(
     app,
-    origins=["http://localhost:5173", "https://your-frontend.vercel.app"],
+    origins=[
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://docappointments.in",
+        "https://www.docappointments.in"
+    ],
     supports_credentials=True
 )
 
